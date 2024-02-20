@@ -8,7 +8,7 @@ from streamlit_jupyter import StreamlitPatcher, tqdm
 StreamlitPatcher().jupyter()
 st.title("Summarizer")
 
-
+st. set_page_config(layout="wide")
 st.markdown(
     """
     <style>
