@@ -8,6 +8,23 @@ from streamlit_jupyter import StreamlitPatcher, tqdm
 StreamlitPatcher().jupyter()
 st.title("Summarizer")
 
+
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        padding: 0 0 0 0;
+        max-width: 100%;
+    }
+    .main {
+        width: 100%;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 os.environ['REPLICATE_API_TOKEN']='r8_KDgE8tUvIS50GimL0ZspWeG2ZpwUc5t1K0X5C'
 pr = "do extractive summarisation on the following text. make sure to clean the text as it was extracted from a pdf. text below : "
 uploaded_file = st.file_uploader("Choose a file")
