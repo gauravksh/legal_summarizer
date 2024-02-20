@@ -6,9 +6,10 @@ import pandas as pd
 from PyPDF2 import PdfReader as rd
 from streamlit_jupyter import StreamlitPatcher, tqdm
 StreamlitPatcher().jupyter()
+st.set_page_config(layout="wide")
+
 st.title("Summarizer")
 
-st. set_page_config(layout="wide")
 st.markdown(
     """
     <style>
