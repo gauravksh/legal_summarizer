@@ -1,0 +1,9 @@
+easyocr==1.7.1
+google-ai-generativelanguage==0.4.0
+google-api-core==2.17.1
+google-auth==2.28.0
+google-generativeai==0.3.2
+googleapis-common-protos==1.62.0
+pypdfium==0.0.15
+pypdfium2==4.27.0
+pytesseract==0.3.10
