@@ -1,1 +1,0 @@
-geminikey='AIzaSyB-rG5UQk0kiMz4R3TLSkaFEUQA1y01pIA'
