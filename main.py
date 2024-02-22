@@ -10,8 +10,7 @@ StreamlitPatcher().jupyter()
 st.set_page_config(layout="wide")
 
 st.title("Summarizer")
-geminikey = st.secrets['geminikey']
-print(geminikey)
+geminikey = os.environ.get('geminikey')
 genai.configure(api_key=geminikey)
 model = genai.GenerativeModel('gemini-pro')
 
