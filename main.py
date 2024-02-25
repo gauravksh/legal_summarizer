@@ -45,7 +45,7 @@ def ocrpdf(file_path,page_num):
     return this    
 
 os.environ['REPLICATE_API_TOKEN']='r8_KDgE8tUvIS50GimL0ZspWeG2ZpwUc5t1K0X5C'
-pr = "do extractive summarisation on the following text to about 10-15 lines or less. make sure to clean the text as it was extracted from a pdf. text below : "
+pr = "do extractive summarisation on the following text to about 10-15 lines or less. Give pointers like the court name, date, name of people involved as well as other import points. make sure to clean the text as it was extracted from a pdf. text below : "
 
 uploaded_file = st.file_uploader("Choose a file")
 with st.spinner("Processing"):
@@ -56,8 +56,8 @@ with st.spinner("Processing"):
             f.write(uploaded_file.getvalue())
         file = rd(uploaded_file)
         pages = len(file.pages)
-        if pages > 2:
-            pages = 3
+        if pages > 1:
+            pages = 2
         for page in range(1, pages+1):
             pr += ocrpdf(path, page)
             pr += " "
