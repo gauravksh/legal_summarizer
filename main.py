@@ -44,7 +44,6 @@ def ocrpdf(file_path,page_num):
         this = (f'{this} \n{bound[1]}')
     return this    
 
-os.environ['REPLICATE_API_TOKEN']='r8_KDgE8tUvIS50GimL0ZspWeG2ZpwUc5t1K0X5C'
 pr = "do extractive summarisation on the following text to about 10-15 lines or less. Give pointers like the court name, date, name of people involved as well as other import points. make sure to clean the text as it was extracted from a pdf. text below : "
 
 uploaded_file = st.file_uploader("Choose a file")
